@@ -27,7 +27,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Chag sameach! Thank you for joining us for Hanukkah! Hanukkah, which means dedication in Hebrew, and is often called Hag Haorim, meaning the Festival of Lights. Hanukkah remembers a great miracle that took place in Jerusalem. After the desecration of the Second Temple in the second century B.C.E, the priests could only find one day’s worth of oil that had not also been defiled. According to legend, that oil burned for eight - full - days - in the Second Temple lampstand, which was the total time it took to purify more oil. On each of the eight nights of Hanukkah, we light candles representing those eight days. To begin, you can say the number night for a brief remembrance and the blessings. for example: one, night one, or first night. You can also get a bracha by saying wine or challah."
+        speak_output = "This is the opening remark when your app is called"
 
         return (
             handler_input.response_builder
@@ -62,7 +62,7 @@ class HelpIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "You can say the number of the night of Hanukkah, for example: night one, first night, or just one. You can also say wine or bread to get a bracha"
+        speak_output = "verbiage for help"
 
         return (
             handler_input.response_builder
@@ -79,7 +79,7 @@ class HomeIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "You can say the number of the night of Hanukkah, for example: night one, first night, or just one. You can also say wine or bread to get a bracha"
+        speak_output = "verbiage for Home"
 
         return (
             handler_input.response_builder
@@ -97,7 +97,7 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Chag sameach and Thank you for listening! Come back for more celebration and remembrance tomorrow!"
+        speak_output = "final message when user leaves"
 
         return (
             handler_input.response_builder
